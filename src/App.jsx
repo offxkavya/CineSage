@@ -9,6 +9,7 @@ function App() {
   return (
     <>
      <h1>Hello world</h1>
+     <h2>This is new para</h2>
     </>
   )
 }
