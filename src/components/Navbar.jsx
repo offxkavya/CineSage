@@ -2,8 +2,7 @@ import React, { useState } from 'react'
 import { MdMenu } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
 
-const Navbar = () => {
-    const [login, setLogin] = useState(false)
+const Navbar = ({loginOpen,setLoginOpen}) => {
     const [openMenu, setOpenMenu] = useState(false)
     const navigate = useNavigate()
     return (
@@ -17,11 +16,10 @@ const Navbar = () => {
                 <li><a class="hover:text-gray-500/80 transition" href="#">Webseries</a></li>
             </ul>
 
-            <button type="button" class="bg-white text-gray-600 border border-gray-300 md:inline hidden text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full cursor-pointer" onClick={()=>{
-                    setLogin(!login)
-                    navigate("/login")
+            <button type="button" class="bg-white text-gray-600 border border-gray-300 md:inline hidden text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full cursor-pointer hover:opacity-80 duraiton-150" onClick={()=>{
+                    setLoginOpen(!loginOpen)
                 }}>
-                {login? "Logout":"Login"}
+                {loginOpen? "Logout":"Login"}
             </button>
 
             <button onClick={()=>{setOpenMenu(!openMenu)}} aria-label="menu-btn" type="button" class="menu-btn inline-block md:hidden active:scale-90 transition">
