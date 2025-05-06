@@ -1,6 +1,6 @@
 import React from 'react'
 import { BiStar } from 'react-icons/bi'
-const MovieCard = ({title,img,rating,overview}) => {
+const MovieCard = ({title,img,rating}) => {
   return (
     <div className='w-full rounded-lg h-full bg-white/30 backdrop-blur-2xl'>
         <img className='object-cover' src={`https://image.tmdb.org/t/p/w500${img}`} alt={title} />

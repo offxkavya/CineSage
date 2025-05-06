@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import { MdMenu } from 'react-icons/md'
-import { useNavigate } from 'react-router-dom'
 
 const Navbar = ({loginOpen,setLoginOpen}) => {
     const [openMenu, setOpenMenu] = useState(false)
-    const navigate = useNavigate()
     return (
         <nav class="h-[70px] relative w-full px-6 md:px-16 lg:px-24 xl:px-32 flex items-center justify-between z-20 bg-transparent text-white shadow-[0px_4px_25px_0px_#0000000D] transition-all">
 
@@ -35,10 +33,9 @@ const Navbar = ({loginOpen,setLoginOpen}) => {
                 </ul>
 
                 <button type="button" class="bg-white  cursor-pointer text-gray-600 border border-gray-300 mt-6 text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full" onClick={()=>{
-                    setLogin(!login)
-                    navigate("/login")
+                    setLoginOpen(!loginOpen)
                 }}>
-                    {login? "Logout":"Login"}
+                    {loginOpen? "Logout":"Login"}
                 </button>
             </div>
             }

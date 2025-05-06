@@ -5,7 +5,7 @@ import MovieCard from '../components/MovieCard'
 import { BsX } from 'react-icons/bs'
 const Home = () => {
     const [data, setData] = useState([])
-    const [loginOpen, setLoginOpen] = useState(true)
+    const [loginOpen, setLoginOpen] = useState(false)
     useEffect(() => {
         const url = 'https://api.themoviedb.org/3/trending/movie/day?language=en-US';
         const options = {
@@ -18,7 +18,6 @@ const Home = () => {
         const fetchMovie = async () => {
             const res = await fetch(url, options)
             const data = await res.json()
-            console.log(data)
             setData(data.results)
         }
         fetchMovie()
@@ -63,10 +62,10 @@ const Home = () => {
                 <h1 className='text-7xl text-center mt-[20vh] w-[70%] font-bold'>Dive in the world of movies with <span className='text-indigo-600'>Cinesage</span></h1>
                 <button className='my-20 bg-white border-black border rounded-xl text-black px-3 flex items-center gap-3 animate-bounce duration-150 cursor-pointer hover:opacity-80 py-2'>Watch now <BsArrowDown /></button>
             </div>
-            <div className='grid grid-cols-3 gap-10'>
+            <div className='grid grid-cols-2 md:grid-cols-4 gap-10'>
                 {
                     data && data.map((item, idx) => {
-                        return <MovieCard key={idx} title={item.original_title} img={item.poster_path} rating={item.vote_average} overview={item.overview} />
+                        return <MovieCard key={idx} title={item.original_title} img={item.poster_path} rating={item.vote_average} />
                     })
                 }
             </div>
