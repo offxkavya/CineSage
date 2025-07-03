@@ -16,7 +16,7 @@ const Landing = () => {
             </nav>
           </header>
     
-          <section id="home" className="hero bg-cover bg-center h-screen flex items-center justify-center text-white" style={{ backgroundImage: 'url(/hero-background.jpg)' }}>
+          <section id="home" className="hero bg-cover bg-center h-screen flex items-center justify-center text-white">
             <div className="hero-content bg-black bg-opacity-70 p-8 rounded-lg text-center">
               <h1 className="text-5xl mb-4">Welcome to MovieApp</h1>
               <p className="text-xl mb-6">Discover and explore the best movies tailored just for you.</p>
@@ -24,7 +24,7 @@ const Landing = () => {
             </div>
           </section>
     
-          <section id="features" className="features py-20 bg-gray-100">
+          {/* <section id="features" className="features py-20 bg-gray-100">
             <div className="container mx-auto text-center">
               <h2 className="text-4xl mb-8">Features</h2>
               <div className="feature-cards flex flex-wrap justify-center">
@@ -42,16 +42,16 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
     
-          <footer id="contact" className="bg-gray-800 text-white py-4">
+          {/* <footer id="contact" className="bg-gray-800 text-white py-4">
             <div className="container mx-auto text-center">
               <p>&copy; 2025 MovieApp. All rights reserved.</p>
             </div>
-          </footer>
+          </footer> */}
         </div>
-      );
-    }
+
+         )}
     
 
 export default Landing
