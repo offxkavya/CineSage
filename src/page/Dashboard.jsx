@@ -1,14 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import LoginForm from '../components/LoginForm';
+import TrendingMovies from '../components/TrendingMovies';
 import Footer from '../components/Footer';
 
-const Login = () => (
+const Dashboard = () => (
   <>
     <Navbar />
-    <LoginForm />
+    <TrendingMovies />
     <Footer />
   </>
 );
 
-export default Login;
+export default Dashboard; 

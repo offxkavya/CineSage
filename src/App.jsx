@@ -1,19 +1,21 @@
-import React from 'react'
-import Landing from './components/Landing'
-import Navbar from './components/Navbar'
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
-import Home from './page/Home'
-import Login from './page/Login'
-const App = () => {
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './page/Login';
+import Dashboard from './page/Dashboard';
+import Movie from './page/Movie';
+import MovieDescription from './page/MovieDescription';
+
+function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path='/login' element={<Login />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/movies" element={<Movie />} />
+        <Route path="/movie/:id" element={<MovieDescription />} />
       </Routes>
-    </BrowserRouter>
-    
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+body {
+  background: #181829;
+  color: #f3f3f3;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+a {
+  color: #ffe082;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
