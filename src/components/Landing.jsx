@@ -24,31 +24,7 @@ const Landing = () => {
             </div>
           </section>
     
-          {/* <section id="features" className="features py-20 bg-gray-100">
-            <div className="container mx-auto text-center">
-              <h2 className="text-4xl mb-8">Features</h2>
-              <div className="feature-cards flex flex-wrap justify-center">
-                <div className="feature-card bg-white p-6 rounded shadow m-4 w-72">
-                  <h3 className="text-2xl mb-2">Personalized Recommendations</h3>
-                  <p className="text-gray-600">Get movie suggestions based on your preferences.</p>
-                </div>
-                <div className="feature-card bg-white p-6 rounded shadow m-4 w-72">
-                  <h3 className="text-2xl mb-2">Detailed Movie Info</h3>
-                  <p className="text-gray-600">Explore in-depth details about each movie.</p>
-                </div>
-                <div className="feature-card bg-white p-6 rounded shadow m-4 w-72">
-                  <h3 className="text-2xl mb-2">Cast and Crew Details</h3>
-                  <p className="text-gray-600">Learn more about the actors and directors.</p>
-                </div>
-              </div>
-            </div>
-          </section> */}
-    
-          {/* <footer id="contact" className="bg-gray-800 text-white py-4">
-            <div className="container mx-auto text-center">
-              <p>&copy; 2025 MovieApp. All rights reserved.</p>
-            </div>
-          </footer> */}
+          
         </div>
 
          )}
